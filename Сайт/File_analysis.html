@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Сортировка базы данных научных публикаций</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+        <header>
+            <button class="Header_button">
+                <a href="index.html">Главная</a>
+            </button>
+            <button class="Header_button">
+                <a href="File_analysis.html">Анализ файлов</a>
+            </button>
+        </header>
+        <main class="Main_section">
+            <section>
+                <h1>Обработка файлов</h1>
+                <section class="Text">
+                    <h2>
+                        Введите обрабатываемый файл в формате txt.
+                    </h2>
+                    <form enctype="multipart/form-data" method="post" accept="text/plain" class="Header_button"> <!-- multiple = несколько файлов -->
+                    <p>
+                        <input type="file" name="f">
+                        <input type="submit" value="Отправить" onclick="location.href='File_output.html'">
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
